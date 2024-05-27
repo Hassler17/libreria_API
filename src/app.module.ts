@@ -5,12 +5,12 @@ import { ThrottlerModule } from '@nestjs/throttler';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Libro } from './libros/entities/libro.entity';
 import { LibrosModule } from './libros/libros.module';
-import { AuthModule } from './auth/auth.module'; // Importa tu AuthModule aquí
+import { AuthModule } from './auth/auth.module'; 
 
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true, // Hacer que el módulo de configuración sea global
+      isGlobal: true, 
     }),
     ThrottlerModule.forRoot([{
       ttl: 60,
@@ -30,7 +30,7 @@ import { AuthModule } from './auth/auth.module'; // Importa tu AuthModule aquí
       }),
       inject: [ConfigService],
     }),
-    AuthModule, // Asegúrate de importar AuthModule aquí
+    AuthModule,
     LibrosModule,
   ],
 })

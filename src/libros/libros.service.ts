@@ -38,7 +38,7 @@ export class LibrosService {
       throw new NotFoundException(`Libro con id ${id} no encontrado`);
     }
 
-    // Verificar si los datos proporcionados son diferentes de los datos actuales del libro
+
     const { titulo, autor, publicacion } = updateLibroDto;
     if (
       titulo === libroExistente.titulo &&
@@ -48,7 +48,6 @@ export class LibrosService {
       throw new BadRequestException('Los datos proporcionados son iguales a los datos actuales del libro');
     }
 
-    // Actualizar solo los campos proporcionados
     Object.assign(libroExistente, updateLibroDto);
     return this.librosRepository.save(libroExistente);
   }

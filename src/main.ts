@@ -9,10 +9,9 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.use(helmet());
   app.enableCors({
-    origin: '*', // Permite todas las solicitudes de cualquier origen
+    origin: '*', 
   });
 
-  // Configuración de Swagger
   const config = new DocumentBuilder()
     .setTitle('Libreria API')
     .setDescription('API para la gestión de una colección de libros')

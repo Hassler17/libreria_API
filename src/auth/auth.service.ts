@@ -21,7 +21,7 @@ export class AuthService {
 
   async signIn(username: string, password: string): Promise<string> {
     if (await this.validateUser(username, password)) {
-      const payload = { username }; // Puedes personalizar el payload según tus necesidades
+      const payload = { username };
       return this.jwtService.sign(payload, {
         secret: this.configService.get<string>('JWT_SECRET'),
         expiresIn: '60m',
