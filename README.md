@@ -26,6 +26,9 @@ Esta es una API REST simple para gestionar una colección de libros. La API perm
      publicacion INTEGER NOT NULL
    );
 
+3. Para verificar si la conexion a la base de datos editar el archivo test-db-connection.js y ejecutar node test-connection.js
+
+
 ## Configuración del Proyecto
 
   1. Clona el repositorio
