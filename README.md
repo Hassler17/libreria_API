@@ -1,6 +1,6 @@
 # Libreria API
 
-Esta es una API REST simple para gestionar una colección de libros. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en libros almacenados en una base de datos PostgreSQL.
+Esta es una API REST simple para gestionar una colección de libros. La API permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en libros almacenados en una base de datos PostgreSQL. 
 
 ## Requisitos
 
